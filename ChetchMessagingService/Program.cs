@@ -19,6 +19,7 @@ namespace ChetchMessagingService
             {
                 new Chetch.Services.TCPMessagingServer("ChetchMessagingServer", "ChetchMessagingService", "ChetchMessagingLog")
             };
+
             ServiceBase.Run(ServicesToRun);
         }
     }
