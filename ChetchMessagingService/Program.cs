@@ -17,7 +17,7 @@ namespace ChetchMessagingService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Chetch.Services.TCPMessagingServer("ChetchMessagingServer", "ChetchMessagingService", "ChetchMessagingLog")
+                new CMServer()
             };
 
             ServiceBase.Run(ServicesToRun);
