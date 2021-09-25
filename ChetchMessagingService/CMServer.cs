@@ -13,25 +13,7 @@ namespace ChetchMessagingService
         public const String VERSION = "1.0";
         public CMServer () : base("ChetchMessagingServer", "ChetchMessagingService", "ChetchMessagingLog")
         {
-            Tracing?.TraceEvent(TraceEventType.Information, 0, "Created Chetch Messaging Server version {0}", VERSION);
-           
-        }
-
-
-        /*protected override void OnStart(string[] args)
-        {
-            try 
-            { 
-               base.OnStart(args);
-            } catch (Exception e)
-            {
-
-            }
-        }*/
-
-        protected override void OnStop()
-        {
-            base.OnStop();
+            Tracing?.TraceEvent(TraceEventType.Information, 0, "Created Chetch Messaging Server version {0}", VERSION);  
         }
     }
 }
